@@ -1,0 +1,10 @@
+main {
+    min-height: 100%;
+
+    .first {
+        &-main {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

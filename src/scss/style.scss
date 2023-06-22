@@ -3,9 +3,16 @@
 @import './utils/mixins';
 
 //base
+@import './base/default';
 @import './base/reset.scss';
 @import './base/typography';
 
+//vendor
+@import './vendor/aos';
+@import './vendor/swiper-bundle';
+
 //layout
+@import './layout/header';
+@import './layout/main';
 
 //components
