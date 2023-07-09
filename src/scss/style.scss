@@ -2,17 +2,18 @@
 @import './utils/variables';
 @import './utils/mixins';
 
+//vendor
+@import './vendor/aos';
+
 //base
 @import './base/default';
 @import './base/reset.scss';
 @import './base/typography';
-
-//vendor
-@import './vendor/aos';
-@import './vendor/swiper-bundle';
 
 //layout
 @import './layout/header';
 @import './layout/main';
 
 //components
+@import './components/companies';
+@import './components/auctions';
