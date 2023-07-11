@@ -1,0 +1,89 @@
+.popular {
+    margin-top: 170px;
+
+    &-slider {
+        margin-top: 60px;
+
+        &__item {
+            background: #3D2942;
+            padding: 32px;
+
+            &-img {
+                position: relative;
+
+                img {
+                    max-height: 270px;
+                }
+
+            }
+
+            &-profile {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 28px 0;
+
+                &__guy {
+                    display: flex;
+                    align-items: center;
+
+                    &-nick {
+                        font-size: 32px;
+                        font-weight: 500;
+                        line-height: 36px;
+                        display: flex;
+                        align-items: center;
+                        color: $white2;
+                    }
+
+                    img {
+                        border-radius: 50%;
+                        display: block;
+                        overflow: hidden;
+                        margin-right: 16px;
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
+
+                &__likes {
+                    span {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 35px;
+                        color: $gray2;
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper {
+        overflow: visible !important;
+
+        &-slide {
+            width: auto;
+        }
+
+        &-button-prev::after,
+        &-button-next::after {
+            display: none;
+        }
+
+        &-button-prev {
+            transform: rotate(180deg);
+        }
+
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            left: 90%;
+        }
+
+        &-button {
+            position: absolute;
+            top: -10%;
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

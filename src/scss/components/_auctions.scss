@@ -15,6 +15,7 @@
 
                 img {
                     object-fit: cover;
+                    height: 300px;
                 }
 
                 div {
@@ -62,6 +63,8 @@
                         display: block;
                         overflow: hidden;
                         margin-right: 16px;
+                        width: 64px;
+                        height: 64px;
                     }
                 }
 
