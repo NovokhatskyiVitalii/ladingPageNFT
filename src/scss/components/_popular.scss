@@ -1,6 +1,23 @@
 .popular {
     margin-top: 170px;
 
+    &-main {
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: calc(100%);
+            z-index: 1;
+            background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+        }
+    }
+
     &-slider {
         margin-top: 60px;
 
@@ -22,6 +39,7 @@
                 justify-content: space-between;
                 align-items: center;
                 margin: 28px 0;
+                margin-bottom: 0;
 
                 &__guy {
                     display: flex;
@@ -71,19 +89,26 @@
         }
 
         &-button-prev {
-            transform: rotate(180deg);
+            transform: rotate(180deg) !important;
         }
 
-        .swiper-button-prev,
-        .swiper-rtl .swiper-button-next {
+        &-button-next {
             left: 90%;
         }
 
-        &-button {
+        &-button-next,
+        &-button-prev {
             position: absolute;
-            top: -10%;
+            top: 50%;
             width: 50px;
             height: 50px;
+            z-index: 11;
+        }
+
+        &-button-prev.swiper-button-disabled,
+        &-button-next.swiper-button-disabled {
+            display: none;
+
         }
     }
 }
