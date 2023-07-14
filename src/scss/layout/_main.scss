@@ -47,16 +47,27 @@ main {
                     font-weight: 600;
                     font-size: 28px;
                     line-height: 36px;
+                    @include animationTransition;
                 }
 
                 &-btn {
                     background: $yellow;
                     color: $black;
+
+                    &:hover {
+                        @include hoverGrey;
+                    }
+
                 }
 
                 &-btn2 {
                     background: rgba(233, 215, 167, 0.1);
                     border: 1px solid $yellow2;
+
+                    &:hover {
+                        @include hoverYellow;
+
+                    }
                 }
             }
         }
@@ -152,6 +163,12 @@ main {
                     font-size: 24px;
                     line-height: 28px;
                     color: $black;
+                    @include animationTransition;
+
+                    &:hover {
+                        @include hoverGrey($bg: linear-gradient(125.33deg, #8613A5 18.61%, rgba(250, 250, 250, 0.65) 137.4%));
+                        border: none;
+                    }
                 }
             }
 
@@ -172,6 +189,11 @@ main {
             width: 130px;
             height: 130px;
             z-index: -11;
+            @include animationTransition;
+
+            &:hover {
+                background: darken(rgba(109, 91, 114, 0.4), 20)
+            }
         }
     }
 }

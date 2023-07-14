@@ -51,6 +51,13 @@
             display: block;
             color: $black;
             padding: 30px 0;
+
+            @include animationTransition;
+
+            &:hover {
+                @include hoverGrey;
+                border: none;
+            }
         }
     }
 

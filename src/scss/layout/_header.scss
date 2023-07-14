@@ -58,5 +58,10 @@
         padding: 20px 30px;
         background: rgba(253, 215, 167, 0.1);
         border: 2px solid $yellow2;
+        transition: all .3s;
+
+        &:hover {
+            @include hoverYellow;
+        }
     }
 }
