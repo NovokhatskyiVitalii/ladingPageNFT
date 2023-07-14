@@ -41,6 +41,7 @@
                 img {
                     object-fit: cover;
                     display: block;
+                    width: 100%;
                 }
             }
 
@@ -148,5 +149,9 @@
 
     .swiper {
         overflow: visible !important;
+
+        &-slide {
+            height: 100%;
+        }
     }
 }

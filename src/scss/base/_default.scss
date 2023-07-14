@@ -43,6 +43,7 @@ button {
     font-size: 64px;
     line-height: 130px;
     position: relative;
+    z-index: 111;
 
     &:after {
         content: "";
