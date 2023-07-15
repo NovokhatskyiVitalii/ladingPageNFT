@@ -1,9 +1,23 @@
 .companies {
     margin-top: 200px;
 
+    @media (max-width: 850px) {
+        margin-top: 75px;
+    }
+
     &-main {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        flex-wrap: wrap;
+        grid-gap: 30px;
+
+        img {
+            width: 18%;
+
+            @media (max-width: 900px) {
+                width: 33%;
+            }
+        }
     }
 }

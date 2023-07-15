@@ -3,19 +3,37 @@
     padding-bottom: 80px;
     background: linear-gradient(346deg, #251928 0%, rgba(37, 25, 40, 0.00) 100%);
 
+    @media (max-width: 500px) {
+        margin-top: 60px;
+    }
+
+    .auctions-slide {
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
+
     &-slider {
         margin-top: 60px;
+
+        @media (max-width: 600px) {
+            margin-top: 0;
+        }
 
         &__item {
             background: #3D2942;
             padding: 32px;
+
+            @media (max-width: 700px) {
+                padding: 20px 15px;
+            }
 
             &-img {
                 position: relative;
 
                 img {
                     object-fit: cover;
-                    height: 300px;
+                    width: 100%;
                 }
 
                 div {
@@ -31,6 +49,11 @@
                     font-size: 24px;
                     line-height: 35px;
                     letter-spacing: 0.02em;
+
+                    @media (max-width: 1300px) {
+                        font-size: 18px;
+                        padding: 10px 25px;
+                    }
                 }
             }
 
@@ -48,6 +71,11 @@
                         font-weight: 500;
                         font-size: 28px;
                         line-height: 35px;
+
+                        @media (max-width: 1300px) {
+                            font-size: 20px;
+
+                        }
                     }
 
                     &-nick {
@@ -69,7 +97,11 @@
                 }
 
                 &__likes {
+                    display: flex;
+                    align-items: center;
+
                     svg {
+                        margin-right: 5px;
                         width: 28px;
                         cursor: pointer;
                         @include animationTransition;
@@ -86,6 +118,18 @@
                         line-height: 35px;
                         color: $gray2;
                     }
+
+                    @media (max-width: 700px) {
+                        svg {
+                            width: 15px;
+
+                        }
+
+                        span {
+                            font-size: 20px;
+                            line-height: 35px;
+                        }
+                    }
                 }
             }
 
@@ -98,6 +142,10 @@
                     font-size: 24px;
                     line-height: 35px;
                     color: $gray2;
+
+                    @media (max-width: 700px) {
+                        font-size: 18px;
+                    }
                 }
 
                 &__price {
@@ -144,10 +192,22 @@
             @include hoverYellow;
         }
 
+        @media (max-width: 500px) {
+            padding: 13px 58px;
+            margin: 48px auto 0;
+            font-size: 18px;
+        }
     }
 
     .swiper {
         overflow: visible !important;
+
+        &-wrapper {
+            @media (max-width: 600px) {
+                flex-direction: column;
+                grid-gap: 45px 0;
+            }
+        }
 
         &-slide {
             width: auto;
@@ -166,6 +226,22 @@
         .swiper-button-prev,
         .swiper-rtl .swiper-button-next {
             left: 90%;
+
+            @media (max-width: 1250px) {
+                left: 87%;
+            }
+
+            @media (max-width: 1050px) {
+                left: 84%;
+            }
+
+            @media (max-width: 800px) {
+                left: 82%;
+            }
+
+            @media (max-width: 750px) {
+                left: 78%;
+            }
         }
 
         &-button {
@@ -173,6 +249,10 @@
             top: -10%;
             width: 50px;
             height: 50px;
+
+            @media (max-width: 600px) {
+                display: none;
+            }
         }
     }
 }

@@ -25,6 +25,20 @@
 
                     <button class="header-button">Connect Wallet</button>
                 </div>
+                <button class="header-burger__open">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path
+                            d="M4.7998 24H27.1998V20.8H4.7998V24ZM4.7998 8V11.2H27.1998V8H4.7998ZM4.7998 17.6H27.1998V14.4H4.7998V17.6Z"
+                            fill="#FFCE4E" />
+                    </svg>
+                </button>
+                <button class="header-burger__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FFCE4E" class="bi bi-x-lg"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -56,6 +70,7 @@
                     </div>
                 </div>
 
+
                 <div class="first-nft" data-aos="fade-up">
                     <div class="first-nft__header">
                         <div>
@@ -77,12 +92,28 @@
                         <button class="first-nft__footer-btn">Start Bid</button>
                     </div>
                 </div>
+
+                <div class="first-numbers first-numbers-fake" data-aos="fade-right">
+                    <div class="first-numbers__number">
+                        <p>32k+</p>
+                        Artworks
+                    </div>
+
+                    <div class="first-numbers__number">
+                        <p>20k+</p>
+                        Actions
+                    </div>
+
+                    <div class="first-numbers__number">
+                        <p>12k+</p>
+                        Creators
+                    </div>
+                </div>
+
+                <button class="first-arrow">
+                    <img src="./src/img/svg-icons/arrow-bottom.svg" alt="arrow-bottom">
+                </button>
             </div>
-
-            <button class="first-arrow">
-                <img src="./src/img/svg-icons/arrow-bottom.svg" alt="arrow-bottom">
-            </button>
-
         </div>
     </main>
 
@@ -177,7 +208,7 @@
                     <div class="swiper-slide auctions-slide">
                         <div class="auctions-slider__item">
                             <div class="auctions-slider__item-img">
-                                <img src="./src/img/nft-3.jpg" alt="">
+                                <img src="./src/img/nft-2.jpg" alt="">
                                 <div>03:28:24</div>
                             </div>
 
@@ -413,7 +444,7 @@
             </div>
             <div class="swiper categories-slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide categories-slider__item">
+                    <div class="swiper-slide categories-slide categories-slider__item">
                         <div class="categories-slider__item-img">
                             <img src="./src/img/nft-7.png" alt="">
                             <button class="categories-slider__item-btn">Place a Bid</button>
@@ -444,7 +475,7 @@
                             <p class="categories-slider__item-bid__price">4.89 ETH</p>
                         </div>
                     </div>
-                    <div class="swiper-slide categories-slider__item">
+                    <div class="swiper-slide categories-slide categories-slider__item">
                         <div class="categories-slider__item-img">
                             <img src="./src/img/nft-5.jpg" alt="">
                             <button class="categories-slider__item-btn">Place a Bid</button>
@@ -475,7 +506,7 @@
                             <p class="categories-slider__item-bid__price">4.89 ETH</p>
                         </div>
                     </div>
-                    <div class="swiper-slide categories-slider__item">
+                    <div class="swiper-slide categories-slide categories-slider__item">
                         <div class="categories-slider__item-img">
                             <img src="./src/img/nft-6.jpg" alt="">
                             <button class="categories-slider__item-btn">Place a Bid</button>
@@ -506,7 +537,7 @@
                             <p class="categories-slider__item-bid__price">4.89 ETH</p>
                         </div>
                     </div>
-                    <div class="swiper-slide categories-slider__item">
+                    <div class="swiper-slide categories-slide categories-slider__item">
                         <div class="categories-slider__item-img">
                             <img src="./src/img/nft-7.png" alt="">
                             <button class="categories-slider__item-btn">Place a Bid</button>
@@ -537,7 +568,7 @@
                             <p class="categories-slider__item-bid__price">4.89 ETH</p>
                         </div>
                     </div>
-                    <div class="swiper-slide categories-slider__item">
+                    <div class="swiper-slide categories-slide categories-slider__item">
                         <div class="categories-slider__item-img">
                             <img src="./src/img/nft-5.jpg" alt="">
                             <button class="categories-slider__item-btn">Place a Bid</button>
@@ -659,12 +690,13 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-main">
-                <img src="./src/img/logo/footer-logo.svg" alt="footer-logo">
+                <img src="./src/img/logo/footer-logo.svg" alt="footer-logo" data-aos="fade-right">
                 <div>
-                    <p class="footer-main__text">Nec, enim sed lacus, magna pharetra. Phasellus tincidunt nulla pharetra
+                    <p class="footer-main__text" data-aos="fade-right">Nec, enim sed lacus, magna pharetra. Phasellus
+                        tincidunt nulla pharetra
                         gravida est.</p>
 
-                    <div class="footer-main__social">
+                    <div class="footer-main__social" data-aos="fade-up">
                         <a href="#">
                             <svg width="38" height="27" viewBox="0 0 38 27" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -702,10 +734,10 @@
                         </a>
                     </div>
 
-                    <p class="footer-main__rights">All rights reserved@2021</p>
+                    <p class="footer-main__rights" data-aos="fade-up">All rights reserved@2021</p>
                 </div>
 
-                <div class="footer-main__about">
+                <div class="footer-main__about" data-aos="fade-left">
                     <h3 class="footer-main__about-title">About Us</h3>
                     <a href="#">About NFTs</a>
                     <a href="#">Live Auctions</a>
@@ -713,7 +745,7 @@
                     <a href="#">Activity</a>
                 </div>
 
-                <div class="footer-main__support">
+                <div class="footer-main__support" data-aos="fade-left">
                     <h3 class="footer-main__support-title">Support</h3>
                     <a href="#">Help & Support</a>
                     <a href="#">Item Details</a>

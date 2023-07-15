@@ -5,6 +5,10 @@
     margin-top: 80px;
     padding: 117px 0;
 
+    @media (max-width: 600px) {
+        margin-top: 50px;
+    }
+
     &-main {
         &__title {
             color: $white2;
@@ -13,7 +17,12 @@
             font-size: 64px;
             font-style: normal;
             font-weight: 700;
-            line-height: 130px;
+            line-height: 140%;
+            margin-bottom: 20px;
+
+            @media (max-width: 600px) {
+                font-size: 40px;
+            }
         }
 
         div {
@@ -22,6 +31,15 @@
             border: 1px solid $yellow2;
             max-width: 680px;
             margin: 0 auto;
+
+            @media (max-width: 750px) {
+                width: 100%;
+            }
+
+            @media (max-width: 450px) {
+                flex-direction: column;
+                border: 0;
+            }
         }
 
         &__input {
@@ -35,6 +53,16 @@
             border: 0;
             outline: 0;
             padding: 30px 15px 30px 50px;
+
+            @media (max-width: 600px) {
+                font-size: 18px;
+                padding: 15px 15px 15px 20px;
+            }
+
+            @media (max-width: 450px) {
+                border: 1px solid $yellow2;
+                width: 100%;
+            }
 
             &::placeholder {
                 color: #A48EA9;
@@ -58,7 +86,19 @@
                 @include hoverGrey;
                 border: none;
             }
+
+            @media (max-width: 600px) {
+                font-size: 18px;
+                padding: 15px;
+            }
+
+            @media (max-width: 450px) {
+                margin: 32px auto 0;
+                font-size: 24px;
+                padding: 15px 35px;
+            }
         }
+
     }
 
 }

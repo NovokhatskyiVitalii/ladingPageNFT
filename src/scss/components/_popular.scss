@@ -1,35 +1,39 @@
 .popular {
     margin-top: 170px;
 
+    @media (max-width: 600px) {
+        margin-top: 80px;
+
+    }
+
     &-main {
         position: relative;
-
-        &:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100px;
-            height: calc(100%);
-            z-index: 1;
-            background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-            filter: blur(8px);
-            -webkit-filter: blur(8px);
-        }
     }
 
     &-slider {
         margin-top: 60px;
 
+        @media (max-width: 600px) {
+            margin: 0;
+
+        }
+
         &__item {
             background: #3D2942;
             padding: 32px;
+
+            @media (max-width: 700px) {
+                padding: 20px 15px;
+            }
+
+
 
             &-img {
                 position: relative;
 
                 img {
                     max-height: 270px;
+                    width: 100%;
                 }
 
             }
@@ -52,6 +56,10 @@
                         display: flex;
                         align-items: center;
                         color: $white2;
+
+                        @media (max-width: 900px) {
+                            font-size: 16px;
+                        }
                     }
 
                     img {
@@ -61,6 +69,11 @@
                         margin-right: 16px;
                         width: 64px;
                         height: 64px;
+
+                        @media (max-width: 800px) {
+                            width: 40px;
+                            height: 40px;
+                        }
                     }
                 }
 
@@ -78,6 +91,14 @@
 
     .swiper {
         overflow: visible !important;
+
+
+        &-wrapper {
+            @media (max-width: 600px) {
+                flex-direction: column;
+                grid-gap: 45px 0;
+            }
+        }
 
         &-slide {
             width: auto;
@@ -103,6 +124,10 @@
             width: 50px;
             height: 50px;
             z-index: 11;
+
+            @media (max-width: 600px) {
+                display: none;
+            }
         }
 
         &-button-prev.swiper-button-disabled,
