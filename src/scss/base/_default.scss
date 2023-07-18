@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
     position: relative;
@@ -5,7 +9,7 @@ body {
     background: $black;
     @include font('Work Sans', 400);
 
-    &.active-body {
+    &.active {
         overflow: hidden;
     }
 }

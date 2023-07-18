@@ -1,5 +1,7 @@
 .header {
     margin-top: 37px;
+    position: relative;
+    z-index: 20;
 
     &-main {
         display: flex;
@@ -11,10 +13,27 @@
     &-inner {
         display: flex;
         align-items: center;
-        display: none;
+
+        &.active {
+            transform: translateY(0);
+            margin-top: -37px;
+        }
+
 
         @media (max-width: 700px) {
-            display: none;
+            transform: translateY(-150%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 1001;
+            padding-top: 100px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+
+            flex-direction: column;
+            @include animationTransition;
         }
 
         @media (min-width: 700px) {
@@ -32,6 +51,12 @@
                 margin-right: 30px;
                 grid-gap: 25px;
             }
+
+            @media (max-width: 700px) {
+                flex-direction: column;
+                margin: 0 0 40px;
+            }
+
 
             &-link {
                 font-weight: 500;
@@ -59,6 +84,10 @@
                     bottom: -8px;
                     left: 0;
                 }
+
+                @media (max-width: 700px) {
+                    font-size: 24px;
+                }
             }
         }
     }
@@ -79,9 +108,16 @@
     }
 
     &-burger {
+
+
+
         &__open {
             display: none;
             @include animationTransition;
+
+            &.active {
+                display: none;
+            }
 
             &:hover {
                 path {
@@ -97,8 +133,13 @@
 
         &__close {
             display: none;
-
+            position: relative;
+            z-index: 10011;
             @include animationTransition;
+
+            &.active {
+                display: block;
+            }
 
             &:hover {
                 path {
